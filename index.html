@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shareable Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Shareable Resume Builder By Aisha Iqbal</h1>
+  <main>
+    <form id="resumeForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+        <textarea name="education" id="education" rows="4" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experience</legend>
+        <textarea name="experience" id="experience" rows="4" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <textarea name="skills" id="skills" rows="4" required></textarea>
+      </fieldset>
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+    </div>
+  </main>
+
+  <button id="editButton" class="edit">Edit</button>
+
+  
+            <!-- Section for the Shareable link and download option -->
+
+            <div id="shareable-link-container" style="display: none;">
+                <h2 class="shareable">Shareable Link</h2>
+                <p>Here is a shareable link of the resume:</p>
+                <a href="#" id="shareable-link" target="_blank"></a>
+                <br>
+                <button id="download-pdf">Download as PDF</button>
+              </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
