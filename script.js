@@ -32,7 +32,7 @@ function handleFormSubmit(event) {
 }
 // Function to display the generated resume
 function displayResume(resumeData) {
-    var resumeOutput = "\n        <h2>Resume</h2>\n\n        <h3>Personal Information</h3>\n        <p><strong>Name:</strong> ".concat(resumeData.username, "</p>\n        <p><strong>Name:</strong> ").concat(resumeData.name, "</p>\n        <p><strong>Email:</strong> ").concat(resumeData.email, "</p>\n        <p><strong>Phone:</strong> ").concat(resumeData.phone, "</p>\n\n        <h3>Education</h3>\n        <p>").concat(resumeData.education, "</p>\n\n        <h3>Experience</h3>\n        <p>").concat(resumeData.experience, "</p>\n\n        <h3>Skills</h3>\n        <p>").concat(resumeData.skills, "</p>\n    ");
+    var resumeOutput = "\n        <h2>Resume</h2>\n\n        <h3>Personal Information</h3>\n        <p><strong>Username:</strong> ".concat(resumeData.username, "</p>\n        <p><strong>Name:</strong> ").concat(resumeData.name, "</p>\n        <p><strong>Email:</strong> ").concat(resumeData.email, "</p>\n        <p><strong>Phone:</strong> ").concat(resumeData.phone, "</p>\n\n        <h3>Education</h3>\n        <p>").concat(resumeData.education, "</p>\n\n        <h3>Experience</h3>\n        <p>").concat(resumeData.experience, "</p>\n\n        <h3>Skills</h3>\n        <p>").concat(resumeData.skills, "</p>\n    ");
     var resumeOutputElement = document.getElementById("resumeOutput");
     if (resumeOutputElement) {
         resumeOutputElement.innerHTML = resumeOutput;

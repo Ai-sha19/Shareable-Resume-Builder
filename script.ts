@@ -44,7 +44,7 @@ function displayResume(resumeData: any): void {
         <h2>Resume</h2>
 
         <h3>Personal Information</h3>
-        <p><strong>Name:</strong> ${resumeData.username}</p>
+        <p><strong>Username:</strong> ${resumeData.username}</p>
         <p><strong>Name:</strong> ${resumeData.name}</p>
         <p><strong>Email:</strong> ${resumeData.email}</p>
         <p><strong>Phone:</strong> ${resumeData.phone}</p>
